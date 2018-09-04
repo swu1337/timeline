@@ -1,0 +1,23 @@
+@import url("pages/landing.css");
+
+:root {
+    --purple: #6B5DB7;
+    --red: #EF476F;
+    --brown: #7A5C61;
+    --background: #FFE3B2;
+}
+
+*, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    width: 100vw;
+    background-color: var(--background);
+    height: 100vh;
+}

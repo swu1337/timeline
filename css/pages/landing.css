@@ -1,0 +1,26 @@
+.headline {
+    color: white;
+    text-align: center;
+    font-size: 86px;
+    padding: 40px 0 10px 0;
+    letter-spacing: 4px;
+}
+main {
+    text-align: center;
+}
+
+main figure {
+    width: 88%;
+    margin: 0 auto;
+}
+
+main figure img {
+    width: 100%;
+    height: auto;
+}
+
+main h2 {
+    color: var(--purple);
+    letter-spacing: 9px;
+    font-size: 40px;
+}
