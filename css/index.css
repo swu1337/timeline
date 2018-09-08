@@ -1,4 +1,7 @@
+@import url("components/typograpy.css");
+@import url("components/timeline.css");
 @import url("pages/landing.css");
+@import url("pages/content.css");
 
 :root {
     --purple: #6B5DB7;
