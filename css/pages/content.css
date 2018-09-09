@@ -1,14 +1,18 @@
 .timeline {
     display: flex;
-    position: relative;
-    flex-flow: column;
     background-color: var(--background);
     background-image: linear-gradient(var(--background), white, white);
     width: 100%;
+    position: relative;
+}
+
+.timeline-content {
+    display: flex;
+    flex-flow: column;
     align-items: flex-end;
 }
 
-.timeline:after {
+.timeline:before {
     content: '';
     position: absolute;
     top: 0;
@@ -38,8 +42,8 @@
 }
 
 .info-figure:before {
-    content: '800';
-    font-size: 22px;
+    content: attr(data-year);
+    font-size: 20px;
     color: white;
     line-height: 50px;
     position: absolute;
@@ -67,14 +71,14 @@
 
 
 .info .info-title, .info .info-text {
-    padding-right: 28px;
+    padding-right: 35px;
     padding-left: 25px;
 }
 
-.timeline > .info-figure:nth-of-type(even) {
+.timeline .info-figure:nth-of-type(even) {
     align-self: flex-start;
 }
 
-.timeline  .info-figure:nth-of-type(even):before {
+.timeline .info-figure:nth-of-type(even):before {
     left: 3%;
 }

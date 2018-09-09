@@ -1,3 +1,8 @@
+:root {
+    --circle-dx: 30px;
+    --circle-spacing: 7px;
+}
+
 .timeline-starter {
     display: flex;
     position: absolute;
@@ -11,17 +16,17 @@
 
 .circle {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: var(--circle-dx);
+    height: var(--circle-dx);
     border-radius: 50%;
     background-color: var(--red);
 }
 
-.circle::after {
+.circle:after {
     content: '';
     position: absolute;
-    width: 37px;
-    height: 37px;
+    width: calc(var(--circle-dx) + var(--circle-spacing));
+    height: calc(var(--circle-dx) + var(--circle-spacing));
     border-radius: 50%;
     border: 3px solid rgba(0, 0, 0, 0.1);
     top: 50%;
